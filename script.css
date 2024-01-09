@@ -1,0 +1,342 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+
+.side-bg
+{
+    background-image: url("https://s.itl.cat/pngfile/s/14-149572_green-wallpapers-green-wallpaper-page-green-wallpaper-png.png");
+    background-size:cover;
+    position:fixed;
+    height:100vh;
+    width:20vw;
+}
+.profile-bg
+{
+    background-color: black;
+    height:20%;
+    width: 100%;
+}
+.image
+{
+    height:80px;
+    width: 100px;
+    background-color:#ffffff;
+    border-radius:50%;
+}
+.profile-para
+{
+    color:#ffffff;
+    font-weight:bold;
+    font-size:25px;
+}
+.dot
+{
+    background-color:green;
+    border-radius:50%;
+    height:15px;
+    width:15px;
+}
+.admin-top
+{
+    position: fixed;
+    
+}
+.profile-online
+{
+    color:green;
+    font-size:20px;
+    font-weight:500;
+}
+.top-bg
+{
+    background-color: #ffffff;
+    background-size:cover;
+    position: relative;
+    left:20vw;
+    width:80vw;
+    height:13vh;
+}
+.image1
+{
+   height:100%;
+   width:50%;
+
+}
+.heading
+{
+    color:#42378F;
+    font-weight:bold;
+    font-size:33px;
+    padding-top:9px;
+    padding-left: 10px;
+}
+.dashboard
+{
+    background-color: black;
+    background-size:cover;
+    width:80vw;
+    height:11vh;
+}
+.bg-1
+{
+    background: brown;
+    height:8vh;
+    position: relative;
+    left:20vw;
+}
+.heading-dash
+{
+    color:#ffffff;
+    font-size:25px;
+    padding-left:20px;
+    padding-top:5px;
+}
+.general-head
+{
+    color:#ffffff;
+    font-size:25px;
+    padding-left:30px;
+    padding-top:10px;
+}
+.welcome-bg
+{
+    background-color:#ffffff;
+    height:150px;
+    width:190px;
+}
+.line
+{
+   background-color:orange;
+   border-width:2px;
+}
+#icon
+{
+    font-size:25px;
+    color: black;
+}
+#icon1
+{
+    font-size:45px;
+    color:rgb(147, 60, 75)
+}
+.welcome-bg:hover{
+    position: sticky;
+    bottom:10px;
+}
+.dashboard-bg
+{
+    background-color: #ffffff;
+    background-size: cover;
+    width:79vw;
+    margin-left:20vw;
+    margin-top:15vh;
+    padding-top:25px;
+}
+.admin-home
+{
+    background-color: #cbcaca;
+    padding-top:30px;
+    background-size: cover;
+    height:100vh;
+}
+.side-heading
+{
+    font-size:25px;
+    font-weight:500;
+    padding-left: 10px;
+}
+#sideicon
+{
+    font-size:20px;
+    color:rgb(255, 128, 0);
+    position: relative;
+    right:7px;
+    padding-top:5px;
+    padding-left: 10px;
+}
+.side-height
+{
+    height:50px;
+    color:#ffffff;
+}
+.side-height:hover
+{
+    background-color: #cbcaca;
+   color:black; 
+}
+.createuserbg
+{
+    background-image: linear-gradient(to left,#F53844, #42378F);
+    background-size:cover;
+    height:180vh;
+    padding-bottom:20px;
+
+}
+.create-head
+{
+    color: #ffffff;
+    font-size:30px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight:bold;
+    padding-top:20px;
+}
+.register-card
+{
+    background:transparent;
+    border-color:#ffffff;
+    border-width:2px;
+    border-style:solid;
+    background-size: cover;
+    padding-bottom: 15px;
+    width:45vw;
+    margin-left:210px;
+}
+.input
+{
+    background:transparent;
+    border-width:2px;
+    border-color:#ffffff;
+    border-style:solid;
+    width:35vw;
+    height:40px;
+    padding-left:15px;
+    color:#ffffff;
+    font-weight:30px;
+}
+::placeholder{
+    color:#ffffff;
+    font-size: 20px;
+}
+#registericon
+{
+    position: relative;
+    right:33px;
+    color: #ffffff;
+    font-size:18px;
+}
+.select-para
+{
+    color:#ffffff;
+    font-weight:bold;
+    padding-left:45px;
+    padding-top:10px;
+    font-size:20px;
+    text-align: left;
+}
+.selectinput
+{
+    background-color:#ffffff;
+    border-width:2px;
+    border-color:#ffffff;
+    border-style:solid;
+    width:30vw;
+    height:35px;
+    border-radius:5px;
+    font-size:20px;
+}
+.malefont
+{
+    color:#ffffff;
+    font-weight:500;
+}
+.changecolor
+{
+    color:#ffffff;
+    font-weight:500;
+}
+.radio
+{
+    color:blue;
+    font-size:30px;
+}
+.submit-button
+{
+    background-color: blue;
+    border-width:0px;
+    color:white;
+    padding-top:10px;
+    padding-bottom:10px;
+    padding-right:30px;
+    padding-left:30px;
+    border-radius:10px;
+}
+.listbg
+{
+    background-image: linear-gradient(to left,#F53844, #42378F);
+    background-size: cover;
+    padding-bottom: 80px;
+    padding-right:30px;
+    width:85vw;
+}
+table,th,td{
+    border-color: black;
+    border-width:1px;
+    border-collapse: collapse;
+    border-style:solid;
+    padding:10px;
+    font-weight:bold;
+    background-color:#ffffff;
+    text-align: center;
+}
+.registerheading
+{
+    color:#ffffff;
+    font-weight:bold;
+}
+.togglecolor
+{
+    background-color:"#42378F";
+    background: transparent;
+}
+.coursel
+{
+    background-image:linear-gradient(to left,#F53844, #42378F);
+    background-size: cover;
+    padding-bottom:30px;
+    width:80vw;
+    padding-left:50px;
+    padding-right:50px;
+}
+.gallery-image
+{
+    height:400px;
+}
+.contact-bg
+{
+    background-color: #340606;
+    background-size: cover;
+    height:100vh;
+    width:80vw;
+    padding-top:20px;
+}
+.contact-top-bg
+{
+    background-image:url("https://www.jntuk.edu.in/wp-content/uploads/2019/06/slider01.jpg");
+    height:50vh;
+    width:100%;
+    
+}
+.contact-bottom-bg
+{
+    background-image:url("https://cdn.jntufastupdates.com/wp-content/uploads/2022/02/JNTUK_Enquiry-1024x729.jpg");
+    height:50vh;
+    width:100%;
+    
+}
+.contact-heading
+{
+    color:#ffffff;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight:bold;
+    font-size:50px;
+    text-decoration: underline;
+    text-decoration-color: red;
+    text-align: center;
+    padding-top: 100px;
+
+}
+.sizing
+{
+    height:50vh;
+}

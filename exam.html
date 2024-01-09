@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/aaa1b29748.js" crossorigin="anonymous"></script>
+</head>
+<body>  
+    <div class="background">
+        <div class="d-flex flex-row">
+            <div class="side-bg ">
+                <div class="profile-bg">
+                    <div class="d-flex flex-row pl-3 pt-2">
+                        <img src="https://i.pinimg.com/originals/54/26/4a/54264a84e2f96cb7a5c32efa99b4714d.jpg" class="image"/>
+                        <div>
+                            <p class="profile-para pl-3 pt-2 mb-1">Admin</p>
+                            <div class="d-flex flex-row pl-3">
+                                <p class="dot mt-2">.</p>
+                                <p class="profile-online pl-2">Online</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h1 class="general-head">General</h1>
+                <hr class="line">
+                <div class="d-flex flex-row side-height pl-4 pt-2" onclick="home()" id="sidehome">
+                    <i class="fa-solid fa-house" id="sideicon"></i>
+                    <h1 class="side-heading">Home</h1>
+                </div>
+                <div class="d-flex flex-row side-height pl-4 pt-2 mt-3" onclick="createUser()" id="createbackground">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="rgb(255, 234, 0)" class="bi bi-person-fill-add" viewBox="0 0 16 16">
+                        <path d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7Zm.5-5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 1 0Zm-2-6a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/>
+                        <path d="M2 13c0 1 1 1 1 1h5.256A4.493 4.493 0 0 1 8 12.5a4.49 4.49 0 0 1 1.544-3.393C9.077 9.038 8.564 9 8 9c-5 0-6 3-6 4Z"/>
+                      </svg>
+                            <h1 class="side-heading pl-3">Create user</h1>   
+                </div>
+                <div class="d-flex flex-row side-height pl-4 pt-2 mt-3" onclick="gallery()" id="images">
+                    <i class="fa-solid fa-image"id="sideicon" style="color:red;"></i>
+                    <h1 class="side-heading pl-3">Gallery</h1>
+                </div>
+                <div class="d-flex flex-row side-height pl-4 pt-2 mt-3" onclick="userlist()" id="list">
+                    <i class="fa-solid fa-users" id="sideicon"></i>
+                    <h1 class="side-heading pl-3">Users list</h1>
+                </div>
+                <div class="d-flex flex-row side-height pl-4 pt-2 mt-3" onclick="contactus()" id="side-contact">
+                    <i class="fa-solid fa-phone" id="sideicon" style="color:rgb(4, 4, 255)";></i>
+                    <h1 class="side-heading">Contact us</h1>
+                </div>
+            </div>
+            <div class="rightbg">
+                <div class="admin-top">
+                    <div class="top-bg d-flex flex-row">
+                        <img src="https://jntukucen.ac.in/wp-content/uploads/2017/12/cropped-cropped-jnlogo-1-1.png" class="image1"/>
+                        <h1 class="heading"></h1>
+                        <div class="ml-auto mr-4 mt-1">
+                            <i href="" id="light-theme">
+                                <i class="fa-solid fa-sun mt-3 ml-3" id="icon"></i>
+                            </i>
+                            <i href="" id="dark-theme">
+                                <i class="fa-solid fa-moon mt-3 ml-3" id="icon"></i>
+                            </i>
+                            <a href="" id="envelope">
+                                <i class="fa-regular fa-envelope mt-3 ml-3" id="icon"></i>  
+                            </a>
+                            <a href="login.html" style="text-decoration: none;">
+                                <i class="fa-solid fa-right-from-bracket mt-3 ml-3" class="signout" id="icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="bg-1">
+                        <h1 class="heading-dash">Admin Dashboard</h1>
+                    </div>
+                </div>
+                <div class="dashboard-bg" id="backgroundContainer">
+                    <div class="admin-home " id="homeContainer">
+                    <div class="mt-4 d-flex flex-row">
+                        <div class="welcome-bg ml-5 shadow">
+                            <div class="text-center ">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" fill="rgb(255, 111, 0)" class="bi bi-people-fill mt-3" viewBox="0 0 16 16">
+                                    <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7Zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm-5.784 6A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216ZM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z"/>
+                                </svg>
+                                <p class="mb-0 mt-2" style="font-size:15px; color:rgb(46, 44, 44); font-weight:bold; color:red;" id="users"></p>
+                                <h3 style="font-size:27px; color:rgb(46, 44, 44);" class="mt-0">students</h3>
+                            </div>
+                        </div>
+                        <div class="welcome-bg ml-5 shadow">
+                            <div class="text-center ">
+                                <i class="fa-solid fa-clock mt-4" style="color: #1d65e2;" id="icon1"></i>
+                            <p class="mb-0 mt-2" style="font-size:15px; color:rgb(46, 44, 44); font-weight:bold;color:red;"id="avg" ></p>
+                            <h3 style="font-size:25px; color:rgb(46, 44, 44);" class="mt-0">Average Time</h3>
+                            </div>
+                        </div>
+                        <div class="welcome-bg ml-5 shadow">
+                            <div class="text-center ">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" fill="rgb(15, 207, 15)" class="bi bi-cloud-arrow-down-fill mt-3" viewBox="0 0 16 16">
+                                    <path d="M8 2a5.53 5.53 0 0 0-3.594 1.342c-.766.66-1.321 1.52-1.464 2.383C1.266 6.095 0 7.555 0 9.318 0 11.366 1.708 13 3.781 13h8.906C14.502 13 16 11.57 16 9.773c0-1.636-1.242-2.969-2.834-3.194C12.923 3.999 10.69 2 8 2zm2.354 6.854-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 1 1 .708-.708L7.5 9.293V5.5a.5.5 0 0 1 1 0v3.793l1.146-1.147a.5.5 0 0 1 .708.708z"/>
+                                </svg>
+                            <p class="mb-0 mt-2" style="font-size:15px; color:rgb(46, 44, 44); font-weight:bold; color:red;" id="download"></p>
+                            <h3 style="font-size:25px; color:rgb(46, 44, 44);" class="mt-0">Downloads</h3>
+                            </div>
+                        </div>
+                        <div class="welcome-bg ml-5 shadow">
+                            <div class="text-center ">
+                                <i class="fa-solid fa-comments mt-4" id="icon1" ></i>
+                            <p class="mb-0 mt-2" style="font-size:15px; color:rgb(46, 44, 44); font-weight:bold; color:red;" id="comment"></p>
+                            <h3 style="font-size:25px; color:rgb(46, 44, 44);" class="mt-0">Comments</h3>
+                            </div>
+                        </div>
+                </div>
+                </div>
+                <div id="create-user" class="d-none">
+                    <div class="createuserbg text-center ">
+                        <h1 class="create-head pt-5">Create a User</h1>
+                    <div class="register-card">
+                    <form id="registrationForm">
+                        <label for="name"></label>
+                        <input type="text" id="name" name="name" class="input mt-5" placeholder="Enter student name" required><br><br>
+                        
+                        <label for="regdno"></label>
+                        <input type="text" id="regdno" name="regdno" class="input mt-1" placeholder="Enter student RegdNo" required><br><br>
+                        
+                        <label for="email"></label>
+                        <input type="email" id="email" name="email" class="input mt-1" placeholder="Enter student email" required><br><br>
+                        <p class="select-para">Select Branch</p>
+                        <label for="branch"></label>
+                        <select id="branch" name="branch" id="selectinput">
+                            <option value="CSE">Computer Science</option>
+                            <option value="ECE">Electronics and Communication</option>
+                            <option value="CST">computer science and Technology</option>
+                            <option value="IT">Information Technology</option>
+                            <option value="ME">Mechanical Engineering</option>
+                            <option value="ME">Artifical Intelligence and Machine Learning</option>
+                        </select><br><br>
+                        <p class="select-para mb-0">Gender</p>
+                        <label></label>
+                        <input type="radio" id="male" name="gender" value="Male" class="radio" required>
+                        <label for="male" class="malefont">Male</label>
+                        <input type="radio" id="female" name="gender" value="Female" class="radio" required>
+                        <label for="female" class="changecolor">Female</label>
+                        <br><br>
+                        
+                        <p class="select-para mb-0">SSC CGPA(in %)</p>
+                        <label for="ssccgpa"></label>
+                        <input type="number" step="0.01" id="ssccgpa" name="ssccgpa"class="input mt-1" required><br><br>
+                        
+                        <p class="select-para mb-0">Inter CGPA(in %)</p>
+                        <label for="intercgpa"></label>
+                        <input type="number" step="0.01" id="intercgpa" name="intercgpa" class="input mt-1" required><br><br>
+                        
+                        <p class="select-para mb-0">B.Tech CGPA(in %)</p>
+                        <label for="btechcgpa"></label>
+                        <input type="number" step="0.01" id="btechcgpa" name="btechcgpa" class="input mt-1" required><br><br>
+                    
+                        <input type="submit" value="Submit" class="submit-button mt-3">
+                    </form>
+                    </div>
+                </div>
+                </div>
+                <div id="users-list" class="d-none">
+                   <div class="listbg pl-5 pt-5">
+                    <h2 class="registerheading">Registered Students</h2>
+                    <table id="studentTable">
+                        <tr>
+                            <th>Name</th>
+                            <th>Registration Number</th>
+                            <th>Email</th>
+                            <th>Branch</th>
+                            <th>Gender</th>
+                            <th>SSC CGPA</th>
+                            <th>Inter CGPA</th>
+                            <th>B.Tech CGPA</th>
+                        </tr>
+                    </table>
+                   </div>
+                </div>
+                <div id="imagegallery" class="d-none">
+                    <div class="coursel">
+                        <h1 style="color:white;font-weight:bold; text-align:center;" class="pt-3 pb-2">College Gallery</h1>
+                        <img src="https://www.jntuk.edu.in/wp-content/uploads/2019/06/slider01.jpg" class="w-100 gallery-image pb-5"/>
+                        <img src="https://www.jntuk.edu.in/wp-content/uploads/2019/06/slider02.jpg" class="w-100  gallery-image pb-5"/>
+                        <img src="https://www.jntuk.edu.in/wp-content/uploads/2019/06/slider03.jpg" class="w-100 gallery-image pb-5"/>
+                        <img src="https://www.jntuk.edu.in/wp-content/uploads/2017/01/k0f8u0a9.jpg" class="w-100 gallery-image pb-5"/>
+                        <img src="https://www.jntuk.edu.in/wp-content/uploads/2019/01/IMG_8646.jpg" class="w-100 gallery-image pb-5"/>
+                        <img src="https://www.jntuk.edu.in/wp-content/uploads/2019/06/SCIENCE-AND-TECHNOLOGY.jpg" class="w-100 gallery-image pb-5"/>
+                        <img src="https://www.collegebatch.com/static/clg-gallery/jntuk-university-college-of-engineering-kakinada-107451.jpg" class="w-100 gallery-image pb-5"/>
+                        <img src="https://storage.googleapis.com/ezap-prod/colleges/2358/prasad-v-potluri-siddhartha-institute-of-technology-vijayawada-campus.jpg" class="w-100 gallery-image pb-5"/>
+
+                    </div>
+                </div>
+                <div id="contactbg" class="d-none">
+                    <div class="contact-bg">
+                        <div class="contact-top-bg">
+                            <h1 class="contact-heading">Contact Us</h1>
+                        </div>
+                        <div class="sizing">
+                            <img src="https://address001.com/Address_Images/Jntu-Kakinada-Address-Contact-Number-30543.jpeg" class="w-100"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </div>
+    </div>
+    <script src="dashboard.js"></script>
+</body>
+</html>
